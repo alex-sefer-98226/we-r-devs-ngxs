@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 769px) {
+  .wrapper {
+    flex-flow: column wrap;
+  }
+}

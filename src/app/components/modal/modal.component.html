@@ -1,0 +1,29 @@
+<div class='wrapper'>
+  <div class='modal'>
+    <div class='inputWrapper'>
+      <label for="month" class='inputLabel'>
+        Month
+      </label>
+      <input
+        type="text"
+        value=''
+        disabled
+        class='inputText'
+        id="month"
+      />
+    </div>
+    <div class='inputWrapper'>
+      <label for="inputdate" class='inputLabel'>
+        Day
+      </label>
+      <input
+        disabled
+        class='inputText'
+        id="inputdate"
+      />
+    </div>
+    {{this.selected$ | async | date:'medium'}}
+    <button class='closeButton' (click)="close()">
+    </button>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<header class='header'>
+  <a routerLink="/">
+    <img src="../../../assets/images/logo.svg" alt="logo" class='logo'/>
+  </a>
+  <nav class='navigation'>
+    <ul class='navigationList'>
+      <li class='navigationLink'>
+        <a
+          class='navigationLinkItem'
+          routerLink="/"
+          routerLinkActive='navigationLinkItemActive'
+          [routerLinkActiveOptions]="{exact: true}"
+        >
+          Home
+        </a>
+      </li>
+      <li class='navigationLink'>
+        <a
+          class='navigationLinkItem'
+          routerLinkActive='navigationLinkItemActive'
+          routerLink="/about"
+        >
+          About us
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

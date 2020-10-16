@@ -1,0 +1,103 @@
+@import "../../../assets/styles/styles";
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 150px);
+
+  background-color: rgba(39, 40, 41, 0.85);
+  z-index: 4;
+  &::before {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.modal {
+  position: relative;
+
+  display: flex;
+  width: 510px;
+  height: 140px;
+
+  background: #fbfbfb 0 0 no-repeat padding-box;
+  padding: 29px 25px 25px;
+}
+
+.inputWrapper {
+  display: flex;
+  width: 50%;
+  flex-flow: column wrap;
+}
+
+.inputLabel {
+  margin-bottom: 8px;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  color: #a2a2a2;
+}
+
+.inputText {
+  height: 54px;
+  width: 220px;
+  border: 2px solid $yellowColor;
+  box-shadow: 0 0 25px #0000000d;
+  padding-left: 20px;
+  letter-spacing: 0.66px;
+  color: #3d3d3d;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: $yellowColor;
+  background-image: url("../../../assets/images/xicon.png");
+  background-size: contain;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+@media (max-width: 769px) {
+  .wrapper {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+  }
+}
+@media (max-width: 569px) {
+  .wrapper {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+  }
+  .modal {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .inputWrapper,
+  .inputText {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

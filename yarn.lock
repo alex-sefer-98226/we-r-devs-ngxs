@@ -1134,6 +1134,27 @@
     enhanced-resolve "4.3.0"
     webpack-sources "1.4.3"
 
+"@ngxs/devtools-plugin@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/devtools-plugin/-/devtools-plugin-3.7.0.tgz#5b6b3e63411da527fcee1e8280714e1b95a838c7"
+  integrity sha512-jjq91AbnnhzSm4QRUd7M0Y+HnUYnsSTVwUy8c1BsH8rGQ9c77xIveQaF2UBngPaDKQzTyzdVO2rV7twy3W2/fg==
+  dependencies:
+    tslib "^1.9.0"
+
+"@ngxs/logger-plugin@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@ngxs/logger-plugin/-/logger-plugin-3.7.0.tgz#a27d6bb27360fc2677773c57868740b8cd33cc41"
+  integrity sha512-yr3NXXJEqJnxSuKiHaTbNmoprKKcrIS1PUIlOm9nvKsOmyrGskxu+MYCzUifemXDIyXSP2u0OBNPrVUumcXyhg==
+  dependencies:
+    tslib "^1.9.0"
+
+"@ngxs/store@^3.6.2-dev.master-eaa5d86":
+  version "3.6.2-dev.master-eaa5d86"
+  resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.6.2-dev.master-eaa5d86.tgz#d52978b5b427fc48a4946e99787387613c071906"
+  integrity sha512-HzhXdGTMmdGpCVCkpTpfEAN08fQ6hx3pUpWgRV7i9RsV0QpQ2iuew5MbbF9TIDlanWKI3tLVnhzJ2u+Pi7CD3g==
+  dependencies:
+    tslib "^1.9.0"
+
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"

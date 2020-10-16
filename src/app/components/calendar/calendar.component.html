@@ -1,0 +1,50 @@
+<div class='wrapper'>
+  <div>
+    <header class='header'>
+      <button
+        (click)="handlePrevMonthButtonClick()"
+        class='button'
+      >
+        <i class="fas fa-angle-left"></i>
+      </button>
+
+      <span class='currentMonth'>
+        {{showDate | date: 'MMMM yyyy' }}
+      </span>
+
+      <button
+        (click)="handleNextMonthButtonClick()"
+        class='button'
+      >
+        <i
+          class="fas fa-angle-right"
+        ></i>
+      </button>
+    </header>
+
+    <table class='table'>
+      <tbody>
+
+      <tr *ngFor="let week of getMonthData(year, month)">
+
+        <td [ngClass]="{'day':true,'today':isToday(day),'selected':areEqual(day,selectedDate)}" *ngFor="let day of week" (click)="handleDayClick(day)">
+          {{day | date:'dd'}}
+        </td>
+
+
+      </tr>
+
+
+      </tbody>
+      <tfoot class="tft">
+      <tr class='footerRow'>
+        <td class="tf" *ngFor="let day of weekDayNames">
+          {{day}}
+        </td>
+
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
