@@ -6,7 +6,7 @@
       </label>
       <input
         type="text"
-        value=''
+        [value]="this.selected$ | async | date : 'LLLL'"
         disabled
         class='inputText'
         id="month"
@@ -20,10 +20,12 @@
         disabled
         class='inputText'
         id="inputdate"
+        [value]="this.selected$ | async | date : 'd, MMMM'"
+        #dayInput
       />
     </div>
-    {{this.selected$ | async | date:'medium'}}
     <button class='closeButton' (click)="close()">
     </button>
   </div>
 </div>
+<!--    {{this.selected$ | async | date:'medium'}}-->

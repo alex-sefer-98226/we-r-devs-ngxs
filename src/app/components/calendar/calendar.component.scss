@@ -2,6 +2,7 @@
 .wrapper {
   width: calc(100vw / 3);
   height: calc(100vh - 150px);
+  min-height: 420px;
   background-color: #272829;
   display: flex;
   flex-flow: column wrap;
@@ -12,13 +13,14 @@
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
   position: relative;
 }
 .currentMonth {
   display: inline-block;
-  padding-top: 5px;
+  //padding-top: 5px;
   color: $lightColor;
   text-transform: uppercase;
   font-size: 19px;
@@ -26,14 +28,14 @@
   font-weight: 400;
 }
 .button {
-  margin: 0 4px;
+  //margin: 0 4px;
   background-color: transparent;
   box-shadow: none;
   outline: none;
   border: none;
   color: $lightColor;
   opacity: 0.67;
-  font-size: 32px;
+  font-size: 28px;
   &:hover {
     cursor: pointer;
     opacity: 1;
@@ -115,7 +117,7 @@
 @media (max-width: 569px) {
   .wrapper {
     width: 100%;
-    padding-left: 25px;
+    padding:40px;
   }
   .day {
     padding: 10px 11px 11px 11px;

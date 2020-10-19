@@ -134,7 +134,6 @@ export class CalendarComponent implements OnInit {
   handleDayClick(date: Date | undefined): void {
     console.log(date);
     if (date === undefined) {
-      console.log(undefined);
       return;
     }
     this.selectedDate = date;

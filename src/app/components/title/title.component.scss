@@ -8,6 +8,7 @@
   padding-right: 33px;
   width: calc(100vw / 3 * 2);
   height: calc(100vh - 150px);
+  min-height: 568px;
   background: transparent url("../../../assets/images/titleImage.jpg") 0% 0%
   no-repeat padding-box;
 }
@@ -35,7 +36,7 @@
   letter-spacing: 0.6px;
   color: $lightColor;
   opacity: 1;
-  margin-bottom: 235px;
+  //margin-bottom: 235px;
   margin-top: 20px;
 }
 @media (max-width: 1367px) {
